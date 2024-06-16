@@ -21,7 +21,7 @@ def levenshtein_distance(source, target):
                           D[i - 1][j - 1] + cost)  # Chi phí thay thế
 
     # Giá trị tại ô cuối cùng là khoảng cách Levenshtein
-    return D
+    return D[m][n]
 
 source = "hola"
 target = "hello"
